@@ -1,0 +1,137 @@
+*{padding:0; margin:0; box-sizing: border-box;} /*RESET Page display*/
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap'); /*font family downloaded from google*/
+
+html{
+  font-family:'playfair display'; /*change font*/
+  color:ghostwhite; /*font color to white to supplement the bg color*/
+  background-color:#2b303c; /*change entire background-color*/
+
+}
+
+/* NAVBAR & HEADER for BOTH PAGES*/
+header{}
+  /*Selector for navbar itself*/
+nav{
+  background-color:#3e4455;font-size:2rem;
+  border-bottom:.1px solid ghostwhite;
+
+  /* overflow: hidden; /*to stop any text from leaking out over another element*/ */
+  /* position: fixed; /*Stays in the users view no matter how far down they scroll*/ */
+   /*lighter color for the navigation and header*/
+  /* top:0; /* Position the nav at the top of page always*/
+  /* width: 100%; /*full screen width from left to right rather than one corner*/ */ */
+}
+ /*Selector for the 3 item elements in the list for navbar*/
+nav ul{display:flex;justify-content: space-around; /* creates equal amount of space for the list*/}
+nav li{display:inline; /*makes the list horizontal*/}
+nav div{}
+header a{
+  color:white;
+}
+.link-container{
+  background-color:#3e4455;
+  display:flex;
+
+  align-items: center;
+  justify-content: space-around;
+}
+.link-container ul {
+  list-style:none; /*Take away bullet points*/
+}
+.name{font-size:5rem;}
+.links li{
+  line-height: 1.5;
+  font-size:1rem;
+}
+
+a{
+  color:white;
+}
+
+#myprojects a{
+  text-decoration: none;
+  cursor: pointer;
+}
+#myprojects{
+  color:ghostwhite;
+  background-color:#2b303c;
+  border:1px solid #2b303c;
+  padding:15px;
+  font-size:14px;
+  transition:background-color .5s;
+}
+
+#myprojects:hover{
+  background-color:#13151a;
+}
+
+
+footer{
+  background-color:#3e4455;font-size:2rem;
+  border-top:.1px solid ghostwhite;
+  padding:5%;
+}
+.myprojects-container{
+  text-align: center;
+}
+
+/* PAGE 2 CSS */
+
+p{
+  text-align: justify;
+  font-size:1.5rem;
+}
+
+.img-border{
+  border-top:3px solid ghostwhite;
+  border-bottom:3px solid ghostwhite;
+  width:75%;}
+
+
+survey-form-container{
+  display:flex;
+  text-align: center;
+}
+.form{
+  text-align:center;
+
+}
+
+table{
+  background-color:ghostwhite;
+  color:#2b303c;
+  border:3px solid #717788;
+
+  margin-left:auto;
+  margin-right:auto;}
+tbody{
+
+}
+tr,td{
+  font-size:2rem;
+  padding:2.5%;
+    border:3px solid #717788;
+}
+th{
+text-align: center;
+border:3px solid #717788;
+  padding-top:1%;
+  background-color:#3e4455;
+  color:ghostwhite;
+  font-size:3rem;
+
+}
+.submit-button{
+  color:ghostwhite;
+  background-color:#3e4455;
+  border:1px solid #3e4455;
+  padding:15px;
+  font-size:14px;
+  transition:background-color .5s;
+}
+.submit-button:hover{
+  background-color:#eee;
+  color:black;
+  cursor: pointer;
+}

@@ -1,0 +1,117 @@
+*{padding:0; margin:0; box-sizing: border-box;} /*RESET Page display*/
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap'); /*font family downloaded from google*/
+
+/*HTML SPECIFIC FOR BOTH PAGES*/
+html{
+  font-family:'playfair display'; /*change font*/
+  color:ghostwhite; /*font color to white to supplement the bg color*/
+  background-color:#2b303c; /*change entire background-color*/
+
+}
+
+/*NAVBAR & HEADER for BOTH PAGES*/
+header{}
+  /*Selector for navbar itself*/
+nav{
+  background-color:#3e4455;font-size:2rem;
+  border-bottom:.1px solid ghostwhite;
+
+  /* overflow: hidden; /*to stop any text from leaking out over another element*/ */
+  /* position: fixed; /*Stays in the users view no matter how far down they scroll*/ */
+   /*lighter color for the navigation and header*/
+  /* top:0; /* Position the nav at the top of page always*/
+  /* width: 100%; /*full screen width from left to right rather than one corner*/ */ */
+}
+ /*Selector for the 3 item elements in the list for navbar*/
+nav ul{display:flex;justify-content: space-around; /* creates equal amount of space for the list*/}
+nav li{display:inline; /*makes the list horizontal*/}
+nav div{}
+a{
+  color:white;
+}
+.link-container{
+  background-color:#3e4455;
+  display:flex;
+
+  align-items: center;
+  justify-content: space-around;
+}
+.link-container ul {
+  list-style:none; /*Take away bullet points*/
+}
+.name{font-size:5rem;}
+.links li{
+  line-height: 1.5;
+  font-size:1rem;
+}
+
+
+/*CONTENT DIFFERENT FROM SECOND PAGE*/
+.about-me-container{
+  height:500px;
+  display:flex;
+  flex-direction: row;
+}
+
+.about-me{
+  flex-grow:1;
+  text-align: justify;
+  font-size:1.5rem;
+  padding:10%;
+}
+.img-1-container{
+}
+.img1{
+  width:550px;
+  height:100%;
+  flex-grow:2;
+  flex-wrap:no-wrap;
+}
+
+.background-summary-container{
+  display:flex;
+  flex-direction: row;
+}
+
+.background-summary{
+  flex-grow:1;
+  text-align: justify;
+  font-size:1.5rem;
+  padding:10%;
+}
+footer{
+  background-color:#3e4455;font-size:2rem;
+  border-top:.1px solid ghostwhite;
+  padding:5%;
+}
+.myprojects-container{
+  text-align: center;
+}
+
+.video-excerpt-container{
+  display:flex;
+  flex-direction: row;
+}
+.video-container{
+
+flex-grow:2;
+}
+
+#myprojects a{
+  text-decoration: none;
+
+}
+#myprojects{
+  color:ghostwhite;
+  background-color:#2b303c;
+  border:1px solid #2b303c;
+  padding:15px;
+  font-size:14px;
+  cursor: pointer;
+  transition:background-color .5s;
+}
+
+#myprojects:hover{
+  background-color:#13151a;
+}
